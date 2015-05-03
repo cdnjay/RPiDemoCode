@@ -1,16 +1,16 @@
 #!/usr/bin/python
 
+#Import libraries
 import MySQLdb
 import sys
 import Adafruit_BMP.BMP085 as BMP085
 
+#Set sensor
 sensor = BMP085.BMP085(mode=BMP085.BMP085_ULTRAHIGHRES)
 
+#Set variables
 temperature = format(sensor.read_temperature())
 pressure = format(sensor.read_pressure())
-
-#print temperature
-#print pressure
 
 # Open database connection
 db = MySQLdb.connect("localhost","root","password","database" )
