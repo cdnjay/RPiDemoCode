@@ -8,7 +8,7 @@ import Adafruit_BMP.BMP085 as BMP085
 #Set sensor
 sensor = BMP085.BMP085(mode=BMP085.BMP085_ULTRAHIGHRES)
 
-#Set variables
+#Grab readings from sensor and set variables
 temperature = format(sensor.read_temperature())
 pressure = format(sensor.read_pressure())
 
