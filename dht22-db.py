@@ -1,12 +1,16 @@
 #!/usr/bin/python
 
+#Import libraries
 import MySQLdb
 import sys
 import Adafruit_DHT
 
+#Set sensor
 sensor = Adafruit_DHT.DHT22
+#Set GPIO pin
 pin = 4
 
+#Grab reading from sensor and set to variables
 humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
 
 # Open database connection
