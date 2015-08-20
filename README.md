@@ -1,2 +1,2 @@
 # RPiDemoCode
-Code from my Raspberry Pi demo at BarCamp Saskatoon 2015.
+Code from my Raspberry Pi demo at the April, 2015 BarCamp in Saskatoon and at ProjectLine Solutions in July, 2015.
